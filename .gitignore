@@ -16,7 +16,7 @@ build/
 bin/
 !**/src/main/**/bin/
 !**/src/test/**/bin/
-.gradle
+
 ### IntelliJ IDEA ###
 .idea
 *.iws
@@ -36,6 +36,8 @@ out/
 ### VS Code ###
 .vscode/
 
-### H2 ###
-*.mv.db
+.DS_Store
+
+###H2###
+*.mv.dv
 *.trace.db
