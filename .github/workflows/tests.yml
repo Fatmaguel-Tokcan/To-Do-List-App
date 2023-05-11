@@ -1,16 +1,10 @@
 name: CI
 
-on:
-  push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
+on: [ push ]
 
 jobs:
-  build:
-
+  test:
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v2
       - name: Set up JDK 17
@@ -22,3 +16,5 @@ jobs:
         run: chmod +x gradlew
       - name: clean build
         run: ./gradlew clean test --info --stacktrace
+
+
